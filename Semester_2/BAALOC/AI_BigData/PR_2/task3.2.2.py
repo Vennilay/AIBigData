@@ -1,14 +1,9 @@
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-import pandas as pd
+import numpy as np
+from sklearn import preprocessing
 
-data = pd.read_csv('iris.csv')
-minimax_scaler = MinMaxScaler()
-standard_scaler = StandardScaler()
+x = np.array([[-1000.1], [-200.2], [500.5], [600.6], [9000.0]])
 
-minimax_res = minimax_scaler.fit_transform(data[['sepal_length_cm']])
-standard_res = standard_scaler.fit_transform(data[['sepal_width_cm']])
+scaler = preprocessing.StandardScaler()
+standardized = scaler.fit_transform(x)
 
-print(minimax_res[:5])
-print()
-print(standard_res[:5])
-
+print(standardized)
