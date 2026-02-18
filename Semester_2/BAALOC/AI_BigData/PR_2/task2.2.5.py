@@ -6,4 +6,3 @@ print(dataframe.head(2))
 print(dataframe.tail(3))
 print(dataframe.shape)
 print(dataframe.describe())
-
