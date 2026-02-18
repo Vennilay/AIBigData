@@ -6,4 +6,3 @@ elif -5 <= x <= 5:
     print('[-5, 5]')
 else:
     print('(5, +infinity)')
-
